@@ -69,15 +69,26 @@ public class Bomb {
             System.out.println("Bomb Effects: empty");
         } else {
             StringBuilder sb = new StringBuilder();
-            System.out.print("Bomb Effects: ");
-            sb.append(bombEffects).append(", ");
+            sb.append("Bomb Effects: ").append("");
+
+            for (int i = 0; i < bombEffects.size() - 1; i++) {
+                sb.append(bombEffects.poll()).append(", ");
+            }
+            sb.append(bombEffects.poll()).append("");
+
             System.out.println(sb.toString().trim());
         }
 
         if (bombCasing.size() == 0) {
             System.out.println("Bomb Casings: empty");
         } else {
-
+            StringBuilder sb = new StringBuilder();
+            sb.append("Bomb Casings: ").append("");
+            for (int i = 0; i < bombCasing.size() - 1; i++) {
+                sb.append(bombCasing.pop()).append(", ");
+            }
+            sb.append(bombCasing.pop()).append("");
+            System.out.println(sb.toString().trim());
         }
 
         System.out.printf("Cherry Bombs: %d%n", count2);
