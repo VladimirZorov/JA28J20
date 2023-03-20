@@ -1,3 +1,5 @@
+package firstTwoExercises;
+
 import java.util.*;
 
 public class Bomb {
@@ -66,10 +68,10 @@ public class Bomb {
         }
 
         if (bombEffects.size() == 0) {
-            System.out.println("Bomb Effects: empty");
+            System.out.println("firstTwoExercises.Bomb Effects: empty");
         } else {
             StringBuilder sb = new StringBuilder();
-            sb.append("Bomb Effects: ").append("");
+            sb.append("firstTwoExercises.Bomb Effects: ").append("");
 
             for (int i = 0; i < bombEffects.size() - 1; i++) {
                 sb.append(bombEffects.poll()).append(", ");
@@ -80,10 +82,10 @@ public class Bomb {
         }
 
         if (bombCasing.size() == 0) {
-            System.out.println("Bomb Casings: empty");
+            System.out.println("firstTwoExercises.Bomb Casings: empty");
         } else {
             StringBuilder sb = new StringBuilder();
-            sb.append("Bomb Casings: ").append("");
+            sb.append("firstTwoExercises.Bomb Casings: ").append("");
             for (int i = 0; i < bombCasing.size() - 1; i++) {
                 sb.append(bombCasing.pop()).append(", ");
             }

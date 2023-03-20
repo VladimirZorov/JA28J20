@@ -1,3 +1,5 @@
+package firstTwoExercises;
+
 import java.util.Scanner;
 
 public class Snake {
